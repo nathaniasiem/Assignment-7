@@ -21,10 +21,7 @@ public class A7Q1 {
         return area;
             }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+       public static void main(String[] args) {
         // create scanner to scan input
         Scanner input = new Scanner (System.in);
         
