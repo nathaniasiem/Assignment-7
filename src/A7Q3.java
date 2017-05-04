@@ -19,7 +19,7 @@ public class A7Q3 {
         int factorNum = 1;
 
         //create a loop to go through each number
-        System.out.println("Your factors for " + number + " are:");
+        System.out.println("The factors for " + number + " are:");
         while (factorNum <= number) {
             //condition if each number gives a quotient with no remainders
             if (number % factorNum == 0) {
