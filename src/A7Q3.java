@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class A7Q3 {
 
     /**
-     * Method for finding the factors of a number
+     * Method for finding all factors of a number
      *
      * @param number -number to factor
      * @return -print out the factors
@@ -21,10 +21,11 @@ public class A7Q3 {
         //create a loop to go through each number
         System.out.println("Your factors for " + number + " are:");
         while (factorNum <= number) {
-            //condition for no remainders in 
+            //condition if each number gives a quotient with no remainders
             if (number % factorNum == 0) {
                 System.out.println(factorNum);
             }
+            //increase position after each factor found
             factorNum++;
         }
         return 0;
