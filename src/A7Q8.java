@@ -1,17 +1,16 @@
 
 import java.util.Scanner;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * @author simon7323
  */
 public class A7Q8 {
-    
+    /**
+     * Method to identify season according to month and day
+     * @param month-month of the year 
+     * @param day -day of the year
+     */
     public static void season(int month,int day){
        //create conditions to compare the date to corresponding season
         //from 
