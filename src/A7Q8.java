@@ -13,14 +13,20 @@ public class A7Q8 {
      */
     public static void season(int month,int day){
        //create conditions to compare the date to corresponding season
-        //from 
+        //from December 15 to March 15
          if (month <= 2 || (month == 3 && day <= 15) || (month == 12 && day > 15 )){
              System.out.println("Winter");
-        } else if (month <= 5 || (month == 6 && day <= 15)){
+        } 
+         //from March 15 to June 15
+         else if (month <= 5 || (month == 6 && day <= 15)){
              System.out.println("Spring");
-        } else if (month <= 8 || (month == 9 && day <= 15)){
+        } 
+         //from June 15 to September 15
+         else if (month <= 8 || (month == 9 && day <= 15)){
              System.out.println("Summer");
-        } else {
+        } 
+         //the rest of the year
+         else {
              System.out.println("Fall");
         }
         
