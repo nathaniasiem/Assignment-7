@@ -16,14 +16,15 @@ public class A7Q9 {
      
      boolean isOdd=true;
       if (num==0){
-          isOdd=false;       
+          isOdd=false; 
+         
       } 
       while(num!=0){
           int digit = num%10;
           if(digit%2==0){
               isOdd=false;             
           }
-          num/=10;
+          num/=10; 
       }
      return true;
      
@@ -40,7 +41,9 @@ public class A7Q9 {
         int integer =input.nextInt();
         
         //call method allDigitsOdd
-        allDigitsOdd(integer);
+        boolean result= allDigitsOdd(integer);
+        
+        System.out.println("All your numbers are odd");
         
     }
 }
