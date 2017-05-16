@@ -14,16 +14,24 @@ public class A7Q9 {
      * @return
      */
     public static boolean allDigitsOdd(int num) {
-
+        // set a variable that assumes all digits are odds
         boolean isOdd = true;
+        //condition when the number has a 0 
+        //indicates not all digits are odd
         if (num == 0) {
             isOdd = false;
         }
+        //create loop 
+        //when number does not have a 0
+        //divide by 10 with remainder;to pull apart the number
         while (num != 0) {
             int digit = num % 10;
+            //condition when dividing by 2 the remainder is 0
+            //indicates that not all digits are odd
             if (digit % 2 == 0) {
                 isOdd = false;
             }
+            //keep continuing to go divide by 10 to go through all digits
             num /= 10;
         }
         return isOdd;
